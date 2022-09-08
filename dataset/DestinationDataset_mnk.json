@@ -1,0 +1,23 @@
+{
+	"name": "DestinationDataset_mnk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "trimbledemo22-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "SpamHam",
+				"fileSystem": "trimblefilesystem22"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

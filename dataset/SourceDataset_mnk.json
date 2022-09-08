@@ -1,0 +1,35 @@
+{
+	"name": "SourceDataset_mnk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GithubRepo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "label",
+				"type": "String"
+			},
+			{
+				"name": "length",
+				"type": "String"
+			},
+			{
+				"name": "punct",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

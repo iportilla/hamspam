@@ -1,0 +1,18 @@
+{
+	"name": "GithubRepo",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"description": "spam ham collection",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/iportilla/hamspam/main/files/smsspamcollection-2k.csv",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
