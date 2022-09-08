@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "trimbledemo22"
+		},
+		"trimbledemo22-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"GithubRepo_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/iportilla/hamspam/main/files/smsspamcollection-2k.csv"
+		},
+		"trimbledemo22-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://trimblestorage22.dfs.core.windows.net"
+		}
+	}
+}
